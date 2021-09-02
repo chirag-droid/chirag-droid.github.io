@@ -1,0 +1,6 @@
+# robots.txt file for https://chirag.vercel.app/
+
+User-Agent: *
+Allow: /
+
+Sitemap: https://chirag.vercel.app/sitemap.xml
