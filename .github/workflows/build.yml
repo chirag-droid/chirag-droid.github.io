@@ -18,9 +18,10 @@ jobs:
           npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.1
+        uses: crazy-max/ghaction-github-pages@v2.5.0
         with:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: out
-          CLEAN: true
+          build_dir: out
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
