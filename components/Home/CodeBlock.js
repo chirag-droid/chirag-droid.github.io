@@ -1,6 +1,6 @@
 export default function CodeBlock() {
   return (
-    <div className='hidden sm:inline-block rounded-2xl shadow-lg mt-5 lg:ml-auto text-left bg-white py-8 px-6 text-blue-600 font-medium'>
+    <div className='hidden z-10 sm:inline-block rounded-2xl shadow-lg mt-5 lg:ml-auto text-left bg-white py-8 px-6 text-blue-600 font-medium'>
     1 class Student:<br/>
     2   def __init__():<br/>
     3     self.name = "Chirag Singla"<br/>

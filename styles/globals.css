@@ -17,4 +17,12 @@
     block: "start";
     inline: "nearest";
   }
+
+  .scroll {
+    scroll-margin-top: 65px;
+  }
+
+  .parallax > div > p {
+    @apply absolute z-[-1] text-blue-500 opacity-40 font-semibold
+  }
 }

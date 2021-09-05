@@ -2,7 +2,7 @@ import HeaderLink from './HeaderLink'
 
 export default function Header() {
   return (
-    <header className='bg-white sticky top-0 z-50 flex shadow-md py-5 px-2'>
+    <header className='bg-white sticky top-0 z-50 flex shadow-md py-4 px-2'>
       <div className='flex space-x-8 cursor-pointer mx-auto sm:ml-24'>
         <ul itemScope itemType="https://schema.org/BreadcrumbList" className='flex space-x-10'>
           <HeaderLink href="#home" priority={3}/>
