@@ -2,6 +2,8 @@
 
 # Next.js + Tailwind Portfolio
 
+![Website preview image](public/meta.png)
+
 Inspired by [anuraghazra.github.com](https://github.com/anuraghazra/anuraghazra.github.io)
 
 ## Deploy your own
