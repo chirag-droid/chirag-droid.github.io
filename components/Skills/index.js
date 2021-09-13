@@ -9,10 +9,10 @@ export default function Skills() {
       <Heading text='My Skillset'/>
 
       <div className='flex my-10 md:mb-0 md:mt-40 w-full text-center justify-evenly'>
-        <FontAwesomeIcon icon={faJava} color='#6A98F0' className='w-14 sm:w-[5rem]'/>
-        <FontAwesomeIcon icon={faReact} color='#6A98F0' className='w-14 sm:w-[5rem]'/>
-        <FontAwesomeIcon icon={faDocker} color='#6A98F0' className='w-14 sm:w-[5rem]' />
-        <FontAwesomeIcon icon={faNodeJs} color='#6A98F0' className='w-14 sm:w-[5rem]'/>
+        <FontAwesomeIcon icon={faJava} color='#6A98F0' className='text-6xl sm:text-7xl'/>
+        <FontAwesomeIcon icon={faReact} color='#6A98F0' className='text-6xl sm:text-7xl'/>
+        <FontAwesomeIcon icon={faDocker} color='#6A98F0' className='text-6xl sm:text-7xl' />
+        <FontAwesomeIcon icon={faNodeJs} color='#6A98F0' className='text-6xl sm:text-7xl'/>
       </div>
 
       <ParallaxProvider>

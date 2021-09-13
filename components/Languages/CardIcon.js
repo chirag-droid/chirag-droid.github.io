@@ -6,7 +6,7 @@ export default function CardIcon({ icon }) {
       <FontAwesomeIcon
         icon={icon}
         color='#ffffff'
-        className='w-10' />
+        className='text-[45px]' />
     </div>
   )
 }
