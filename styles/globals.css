@@ -23,6 +23,6 @@
   }
 
   .parallax > div > p {
-    @apply absolute z-[-1] text-blue-500 opacity-40 font-semibold
+    @apply absolute z-[-1] text-blue-700 opacity-40 font-bold
   }
 }

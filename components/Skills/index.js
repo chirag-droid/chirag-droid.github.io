@@ -26,11 +26,11 @@ export default function Skills() {
         <p className='-top-16 right-[5%] text-[23px]'>GraphQl</p>
         <p className='top-[-10px] lg:top-[-50px] left-0 text-[25px]'>Docker</p>
         <p className='top-[200px] left-[-60px] text-base'>React Native</p>
-        <p className='left-[40%] text-lg'>Android</p>
+        <p className='left-[40%] -top-16 text-lg'>Android</p>
         <p className='top-10 left-3/4 text-base'>Flask</p>
         <p className='top-[300px] left-[85%] text-lg'>MongoDB</p>
-        <p className='top-56 left-[60%] text-2xl'>NextJs</p>
-        <p className='top-[280px] left-[150px] text-xl'>Tailwind</p>
+        <p className='top-44 left-[60%] text-2xl'>NextJs</p>
+        <p className='top-56 left-96 text-xl'>Tailwind</p>
         <p className='top-36 left-[25%] text-base'>Rust</p>
       </Parallax>
       </ParallaxProvider>
