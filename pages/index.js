@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Home from '../components/Home';
 import Languages from '../components/Languages'
 import Skills from '../components/Skills';
-import Career from '../components/Career';
+import Career from '../components/Projects';
 import Footer from '../components/Footer';
 
 export default function Index() {
@@ -21,12 +21,10 @@ export default function Index() {
       <meta name="title" content="Chirag Singla | Student, Software Enthusiast" />
       <meta name="description" content="myself Chirag Singla, student, software enthusiast. Knows Java, Python, Javascript, Rust." />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://localhost:8080/" />
       <meta property="og:title" content="Chirag Singla" />
       <meta property="og:description" content="myself Chirag Singla, student, software enthusiast. Knows Java, Python, Javascript, Rust." />
       <meta property="og:image" content="/meta.png" />
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://localhost:8080/" />
       <meta property="twitter:title" content="Chirag Singla" />
       <meta property="twitter:description" content="myself Chirag Singla, student, software enthusiast. Knows Java, Python, Javascript, Rust." />
       <meta property="twitter:image" content="/meta.png" />

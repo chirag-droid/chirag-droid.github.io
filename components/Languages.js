@@ -1,39 +1,47 @@
-import Heading from "../Heading";
-import Card from './Card';
-import CardIcon from "./CardIcon";
-import { faPython, faJs, faRust, faJava} from '@fortawesome/free-brands-svg-icons'
+import Heading from "./Heading";
+import DevIcon from "devicon-react-svg";
 
-function Name({text}) {
+function Card(props) {
   return (
-    <span className="text-blue-500 text-2xl">{text}</span>
-  );
+    <div className='flex flex-col hover:shadow-lg mx-auto max-w-[300px] h-[350px] text-center justify-evenly shadow-md hover:bg-gray-100 rounded-lg p-2 items-center m-2'>
+      {props.children}
+    </div>
+  )
 }
 
-function Description({text}) {
+function CardIcon({ icon }) {
   return (
-    <p className="text-gray-600">{text}</p>
-  );
+    <div className='rounded-full p-6 w-24 h-24 bg-gradient-to-r from-blue-400 to-blue-500'>
+      <DevIcon
+        icon={icon}
+        style={{
+          fill: "#ffffff",
+          width: "50px"
+        }}
+      />
+    </div>
+  )
 }
 
 const languages = [
   {
     name: "Python",
-    icon: faPython,
+    icon: "python",
     description: "interpreted, high-level programming language. emphasizes code readability with its use of significant indentation",
   },
   {
     name: "Javascript",
-    icon: faJs,
+    icon: "javascript",
     description: "just-in-time compiled, multi-paradigm programming language. curly-bracket syntax, dynamic typing, prototype-based object-orientation",
   },
   {
     name: "Rust",
-    icon: faRust,
+    icon: "rust",
     description: "designed for performance and safety. syntactically similar to C++, guarantee memory safety by using a borrow checker to validate references",
   },
   {
     name: "Java",
-    icon: faJava,
+    icon: "java",
     description: "class-based, object-oriented programming language. intended to let application developers write once, run anywhere",
   },
 ]
@@ -47,8 +55,8 @@ export default function Language() {
       {languages.map(({name, icon, description})=>
         <Card>
           <CardIcon icon={icon} />
-          <Name text={name} />
-          <Description text={description} />
+          <span className="text-blue-500 text-2xl">{name}</span>
+          <p className="text-gray-600">{description}</p>
         </Card>
       )}
     </div>
