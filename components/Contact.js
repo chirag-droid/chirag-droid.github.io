@@ -1,5 +1,3 @@
-import useForm from "../hooks/useForm";
-
 import Heading from "./Heading"
 
 export default function Contact() {
