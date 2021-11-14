@@ -3,8 +3,9 @@ import Header from '../components/Header';
 import Home from '../components/Home';
 import Languages from '../components/Languages'
 import Skills from '../components/Skills';
-import Career from '../components/Projects';
+// import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import Contact from '../components/Contact';
 
 export default function Index() {
   return (
@@ -33,7 +34,8 @@ export default function Index() {
     <Home />
     <Languages />
     <Skills />
-    <Career />
+    {/* <Projects /> */}
+    <Contact />
     <Footer/>
     </>
   )
