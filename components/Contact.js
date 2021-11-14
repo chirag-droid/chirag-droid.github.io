@@ -9,7 +9,8 @@ export default function Contact() {
         noValidate
         action="https://formspree.io/f/mdoyqgwb"
         method="POST"
-        className="w-[70%] rounded-lg shadow-lg mx-auto min-h-[200px] p-5"
+        target=""
+        className="w-[80%] sm:w-[70%] rounded-lg shadow-lg mx-auto min-h-[200px] p-5"
       >
         <div className="flex mb-4 flex-col md:flex-row">
         <label className="flex-grow my-2">
