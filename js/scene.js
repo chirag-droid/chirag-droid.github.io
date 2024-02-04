@@ -79,7 +79,7 @@ export default class Scene {
 		gsap.to(this.camera.rotation, {
 			duration: 1,
 			x: -0.05 * mouseY,
-			y: -0.05 * mouseX,
+			y: 0.05 * mouseX,
 			ease: 'power1.out'
 		})
 	}
