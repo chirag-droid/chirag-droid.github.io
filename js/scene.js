@@ -6,12 +6,11 @@ import * as THREE from 'three'
 const dimensions = document.body.getBoundingClientRect()
 const device = {
 	pixelRatio: window.devicePixelRatio,
-	width: dimensions.width,
-	height: dimensions.height
+	width: window.innerWidth,
+	height: window.innerHeight
 }
 
 export default class Scene {
-	// This doesn't respect canvas own size and sets according to device width, height
 	constructor(canvas) {
 		this.scene = new THREE.Scene()
 
@@ -57,14 +56,12 @@ export default class Scene {
 	}
 
 	resize() {
-		const dimensions = document.body.getBoundingClientRect()
-
-		this.camera.aspect = dimensions.width / dimensions.height
+		this.camera.aspect = window.innerWidth / window.innerHeight
 		this.camera.updateProjectionMatrix()
 
 		if (this.controls) this.controls.update()
 
-		this.renderer.setSize(dimensions.width, dimensions.height)
+		this.renderer.setSize(window.innerWidth, window.innerHeight)
 		this.renderer.setPixelRatio(Math.min(device.pixelRatio, 2))
 	}
 
@@ -77,7 +74,7 @@ export default class Scene {
 		const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
 
 		gsap.to(this.camera.rotation, {
-			duration: 0.5,
+			duration: 0.8,
 			x: -0.05 * mouseY,
 			y: 0.05 * mouseX,
 			ease: 'power1.out'

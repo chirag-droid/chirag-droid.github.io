@@ -1,45 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Comfortaa:wght@300");
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 24px;
 
-html, body {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    z-index: 2;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+
+.logo {
+    color: var(--pink);
+    font-size: 28px;
+    font-family: "Rubik", sans-serif;
+}
+.hero {
     height: 100%;
-}
-
-body {
-    background-color: rgb(20, 20, 20);
-    color: rgb(238, 238, 238);
-    font-family: Comfortaa;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-section {
-    padding: 50px;
-}
-
-h1, h2 {
-    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-h1 {
-    font-size: clamp(1rem, 16vmin, 3rem);
+.hero h1 {
+    max-width: 400px;
+    font-size: 28px;
 }
 
-h2 {
-    font-size: 2em;
-    color: #8af3ff;
+.avatar-box {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    display: block;
 }
 
 #trailer {
-    height: 64px;
-    width: 64px;
+    height: 12px;
+    width: 12px;
     border-radius: 100%;
     background-color: white;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 
     pointer-events: none;
 
@@ -71,7 +87,8 @@ body:hover > #trailer {
 }
 
 #background {
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     top: 0%;
     left: 0%;
     

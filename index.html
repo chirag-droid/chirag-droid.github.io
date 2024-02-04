@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chirag Singla</title>
 
-    <!-- Reset CSS styles across web browsers -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f0d0af9d64.js" crossorigin="anonymous"></script>
 
     <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- THREE.js library -->
@@ -23,15 +24,28 @@
     </script>
 </head>
 <body>
-    <header>
-        <h1>Hi! I'm Chirag Singla</h1>
-    </header>
+    <nav>
+        <a href="/" class="logo interactable" data-type="link">Chirag Singla</a>
+        <ul>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, autem!</p>
+    <section class="hero">
+        <div class="avatar-box">
+            <img class="avatar" src="https://github.com/chirag-droid.png" />
+        </div>
+        <h1 class="interactable">Software developer based in India</h1>
+        <p>Looking for full-time oppurtunities</p>
     </section>
-
 
     <!-- Mouse Trailer -->
     <div id="trailer"></div>
