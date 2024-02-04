@@ -80,7 +80,7 @@ export default class Scene {
 			duration: 0.5,
 			x: -0.05 * mouseY,
 			y: 0.05 * mouseX,
-			ease: 'power2.out'
+			ease: 'power1.out'
 		})
 	}
 
