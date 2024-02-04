@@ -118,6 +118,12 @@ export default class Scene {
 	render() {
 		if (!this.isPlaying) return
 
+		// Calculate deltaTime
+		const deltaTime = this.clock.getDelta()
+
+		this.stars.rotation.x += 0.001 * deltaTime;
+		this.stars.rotation.y += 0.001 * deltaTime;
+
 		requestAnimationFrame(this.render.bind(this))
 		this.renderer.render(this.scene, this.camera)
 	}
