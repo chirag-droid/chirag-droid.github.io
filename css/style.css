@@ -46,6 +46,13 @@ h1 {
     mix-blend-mode: difference;
 }
 
+/* Touch-specific styles */
+@media (hover: none) {
+    #trailer {
+        pointer-events: auto;
+    }
+}
+
 /* when mouse enters the body set opacity of trailer to 1 */
 body:hover > #trailer {
     opacity: 1;
