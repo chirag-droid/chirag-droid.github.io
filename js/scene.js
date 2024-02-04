@@ -77,10 +77,10 @@ export default class Scene {
 		const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
 
 		gsap.to(this.camera.rotation, {
-			duration: 1,
+			duration: 0.5,
 			x: -0.05 * mouseY,
 			y: 0.05 * mouseX,
-			ease: 'power1.out'
+			ease: 'power2.out'
 		})
 	}
 
