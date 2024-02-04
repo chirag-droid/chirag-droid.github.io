@@ -40,6 +40,7 @@ export default class Scene {
 		// this.addControls()
 		this.resize()
 		this.setupResize()
+		this.setupMouseEvents()
 	}
 
 	addControls() {
@@ -65,6 +66,22 @@ export default class Scene {
 
 		this.renderer.setSize(dimensions.width, dimensions.height)
 		this.renderer.setPixelRatio(Math.min(device.pixelRatio, 2))
+	}
+
+	setupMouseEvents() {
+		window.addEventListener("mousemove", this.onMouseMove.bind(this))
+	}
+
+	onMouseMove(event) {
+		const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+		const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+
+		gsap.to(this.camera.rotation, {
+			duration: 1,
+			x: -0.05 * mouseY,
+			y: -0.05 * mouseX,
+			ease: 'power1.out'
+		})
 	}
 
 	addObjects() {
@@ -101,14 +118,7 @@ export default class Scene {
 	render() {
 		if (!this.isPlaying) return
 
-		// Calculate deltaTime
-		const deltaTime = this.clock.getDelta()
-
-		this.stars.rotation.x += 0.01 * deltaTime;
-		this.stars.rotation.y += 0.01 * deltaTime;
-
 		requestAnimationFrame(this.render.bind(this))
-
 		this.renderer.render(this.scene, this.camera)
 	}
 }
