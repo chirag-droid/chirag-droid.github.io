@@ -109,8 +109,6 @@ export default class Scene {
 
 		requestAnimationFrame(this.render.bind(this))
 
-		if (!this.controls) this.controls.update()
-		
 		this.renderer.render(this.scene, this.camera)
 	}
 }
