@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag Singla</title>
+
+    <!-- Reset CSS styles across web browsers -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- THREE.js library -->
+    <script type="importmap">
+    {
+        "imports": {
+            "@/": "./",
+            "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <main class="container">
+        <h1>Chirag Singla</h3>
+    </main>
+
+
+    <!-- Mouse Trailer -->
+    <div id="trailer"></div>
+
+    <!-- Canvas for drawing -->
+    <canvas id="background"></canvas>
+
+    <!-- GSAP animation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <!-- Make The trailer interactive -->
+    <script src="js/trailer.js"></script>
+
+    <!-- Attach ThreeJS scene to canvas -->
+    <script type="module">
+        import BackgroundScene from "@/js/scene.js"
+
+        const canvas = document.getElementById("background")
+        const scene = new BackgroundScene(canvas)
+        scene.play()
+    </script>
+</body>
+</html>
